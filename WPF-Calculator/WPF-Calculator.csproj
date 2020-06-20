@@ -103,7 +103,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\icon.png" />
+    <Resource Include="Assets\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\print.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

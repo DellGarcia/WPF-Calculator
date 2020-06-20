@@ -7,13 +7,13 @@
         xmlns:local="clr-namespace:WPF_Calculator"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="Calculadora WPF" Height="350" Width="300" WindowStartupLocation="CenterScreen" Icon="icon.png">
+        Title="Calculadora WPF" Height="350" Width="300" WindowStartupLocation="CenterScreen" Icon="/WPF-Calculator;component/Assets/icon.png">
     <Grid Background="Purple">
         <StackPanel  Margin="20" Background="GhostWhite">
-            <Border BorderBrush="Gray" BorderThickness="1" Margin="30 20 30 5" CornerRadius="5">
+            <TextBox x:Name="lblPilha" Margin="30 15 30 0  " BorderThickness="0" IsReadOnly="True" TextAlignment="Right"/>
+            <Border BorderBrush="Gray" BorderThickness="1" Margin="30 0 30 5" CornerRadius="5">
                 <TextBox x:Name="lblVisor" Margin="7" FontSize="14" BorderThickness="0" IsReadOnly="True" TextAlignment="Right"/>
             </Border>
-            <TextBox x:Name="lblPilha" Margin="30 0" BorderThickness="0" IsReadOnly="True" TextAlignment="Right"/>
             <StackPanel Margin="30 10 30 0" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Width="40" Content="7" Margin="3" Click="AddNewNumber"/>
                 <Button Width="40" Content="8" Margin="3" Click="AddNewNumber"/>
